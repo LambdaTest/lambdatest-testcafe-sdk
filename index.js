@@ -1,5 +1,6 @@
 const logger = require('./src/lib/logger');
 const smartui = require('./src/smartui');
+const pkgName = require('./src/lib/utils').getPackageName()
 
 async function smartuiSnapshot(t, snapshotName) {
     if (!t) throw new Error("The test function's `t` argument is required.");
@@ -7,7 +8,7 @@ async function smartuiSnapshot(t, snapshotName) {
     if (!(await smartui.isSmartUIRunning())) throw new Error('SmartUI server is not running.');
 
   
-    let log = logger("@lambdatest/lambdatest-testcafe-sdk");
+    let log = logger(pkgName);
 
     try {
         // Inject the DOM serialization script
