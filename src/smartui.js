@@ -1,7 +1,6 @@
 const client = require('./lib/httpClient.js');
 const logger = require('./lib/logger.js');
-const utils = require('./lib/utils.js');
-const log = logger('playwright-lambdatest');
+const log = logger('@lambdatest/lambdatest-testcafe-sdk');
 
 async function isSmartUIRunning() { 
     try {
