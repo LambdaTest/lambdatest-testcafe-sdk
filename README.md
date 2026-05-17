@@ -1,4 +1,4 @@
-# Run TestCafe SDK Tests on TestMu AI (Formerly LambdaTest)
+﻿# Run TestCafe SDK Tests on TestMu AI (Formerly LambdaTest)
 
 <p align="center">
   <a href="https://www.testmuai.com/"><img src="https://img.shields.io/badge/MADE%20BY%20TestMu%20AI-000000.svg?style=for-the-badge&labelColor=000" alt="Made by TestMu AI"></a>
@@ -52,7 +52,7 @@ set LT_ACCESS_KEY=YOUR_LAMBDATEST_ACCESS_KEY
 
 ### Run tests
 
-Run your TestCafe tests using the LambdaTest browser provider:
+Run your TestCafe tests using the TestMu AI (Formerly LambdaTest) browser provider:
 
 ```bash
 testcafe "lambdatest:Chrome@latest:Windows 10" tests/
